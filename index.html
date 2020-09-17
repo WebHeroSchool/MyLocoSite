@@ -8,13 +8,18 @@
   <section class="header">
     <div class="header__container">
       <span class="header__logo">LOCO</span>
-      <ul class="header__lang">
-        <li class=><a href="#">RU</a></li>
-      </ul>
     </div>
-    <div class="header__menu">
-      <input class=header__checkbox type="checkbox" id="menu__hamburger">
-      <label class="header__burger" for="menu__hamburger">
+  </section>
+  <section class=lang> 
+    <ul class="lang__switcher">
+      <li class=lang__link><a href="#">RU</a></li>
+    </ul>
+  </section>
+  <section class=menu>
+    <div class=menu__header>
+      <input class=menu__checkbox type="checkbox" id="menu__hamburger">
+      <label class="menu__burger" for="menu__hamburger">
+        <span></span>
         <span></span>
       </label>
       <ul class="menu__box">
@@ -25,13 +30,17 @@
   </section>
   <section class="new-collection">
     <img class="new-collection__image" src="">
-    <h1 class="new-collection__title">Новая коллекция</h1>
-    <p class="new-collection__text">
-      Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
-    </p>
-    <a class="new-collection__readmore">ЧИТАТЬ ДАЛЬШЕ</a>
-    <a class="new-collection__other">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
-    <div class="social">
+    <div class=new-collection__container>
+      <h1 class="new-collection__title">Новая коллекция</h1>
+      <p class="new-collection__text">
+        Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
+      </p>
+      <a class="new-collection__readmore">ЧИТАТЬ ДАЛЬШЕ</a>
+      <a class="new-collection__other">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
+    </div>
+  </section>
+  <section class=bottom>
+    <div class="social__networks">
       <a class="social__link"> <img src=""></a>
       <a class="social__link"> <img src=""></a>
       <a class="social__link"> <img src=""></a>
@@ -40,36 +49,55 @@
     </div>
   </section>
   <section class="clutch">
-    <h2 class="clutch__title">Кожаный клатч</h2>
-    <h3 class="clutch__subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h3>
-    <p class="clutch__description">
-      Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
-    </p>
     <div class="clutch__image">
-      <img class="clutch__image_white" src="">
-      <img class="clutch__image_pink" src="">
     </div>
-    <div class="clutch__list">
-      <ul class="clutch__list_colors">
-        <li class="clutch__list_white"></li>
-        <li class="clutch__list_pink"></li>
-        <li class="clutch__list_blue"></li>
-        <li class="clutch__list_green"></li>
-      </ul>
+    <div class=clutch__main>
+      <div class=clutch__description>
+        <h2 class="clutch__title">Кожаный клатч</h2>
+        <h3 class="clutch__subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h3>
+        <p class="clutch__text">
+          Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
+        </p>
+        <div class="clutch__list">
+          <ul class="clutch__list_colors">
+            <li class="clutch__list_white"></li>
+            <li class="clutch__list_pink"></li>
+            <li class="clutch__list_blue"></li>
+            <li class="clutch__list_green"></li>
+          </ul>
+          <p class="clutch__price">1990₽</p>
+        </div>
+      </div>
+      <div class=clutch__buttons>
+        <button class="clutch__minus">-</button>
+        <input class="clutch__input" type="number"  value="1">
+        <button class="clutch__plus">+</button>
+        <button class="clutch__buy">ДОБАВИТЬ В КОРЗИНУ</button>
+      </div>
     </div>
-    <p class="clutch__price">1990₽</p>
-    <button class="clutch__number"> - 1 + </button>
-    <button class="clutch__basket">ДОБАВИТЬ В КОРЗИНУ</button>
-    <a class="clutch__other">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+    <div class=clutch__other>
+      <a class="clutch__other-items">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+    </div>
   </section>
   <section class="serene-total-look">
-    <h1 class="serene-total-look__title">Serene Total Look</h1>
-    <h2 class="serene-total-look__subtitle">Осенняя коллекция</h2>
-    <p class="serene-total-look__description">Джинсы, свитер, обувь. В комплект также входит пакет ароматного чая и кружка. </p>
-    <button class="serene-total-look__number"> - 1 + </button>
-    <button class="serene-total-look__basket">ДОБАВИТЬ В КОРЗИНУ</button>
-    <a class="serene-total-look__other">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
-    <img class="serene-total-look__image" src="">
+    <div class=serene-total-look__image>
+    </div>
+    <div class=serene-total-look__main>
+      <div class=serene-total-look__description>
+        <h1 class="serene-total-look__title">Serene Total Look</h1>
+        <h2 class="serene-total-look__subtitle">Осенняя коллекция</h2>
+        <p class="serene-total-look__text">Джинсы, свитер, обувь. В комплект также входит пакет ароматного чая и кружка. </p>
+        <div class=serene-total-look__buttons>
+          <button class="serene-total-look__minus">-</button>
+          <input class="serene-total-look__input" type="number"  value="1">
+          <button class="serene-total-look__plus">+</button>
+          <button class="serene-total-look__buy">ДОБАВИТЬ В КОРЗИНУ</button>
+        </div>
+        <div class=serene-total-look__other>
+          <a class="serene-total-look__other-items">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+        </div>
+      </div>
+    </div>
   </section>
   <footer class="footer">
     <p class="footer__text">РАЗРАБОТАНО В</p>
