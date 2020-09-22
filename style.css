@@ -1,3 +1,150 @@
 body {
-    font-family: "Montserrat";
+font-family: "Montserrat";
 }
+
+.header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: black;
+}
+
+.header__container {
+display: flex;
+}
+
+.header__logo {
+width: 98px;
+height: 37px;
+margin: 36px 0 0 52px;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 37px;
+text-align: center;
+color: #FFFFFF;
+}
+
+
+.header__lang {
+display: flex;
+margin: 42px 0 0 0;
+
+width: 31px;
+height: 25px;
+position: relative;
+
+left: 238px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+text-align: right;
+list-style-type: none;
+}
+
+a {
+color: white !important;
+text-decoration: none
+}
+
+.header__lang:after {
+position:absolute;
+background: url("images/Vector.png") no-repeat scroll center center;
+content: "";
+height: 5.5px;
+width: 11px;
+top: 12px;
+left:78px;
+
+}
+
+/* Бургер */
+.header__menu {
+background-color: #f2f2f2;
+width: 92px;
+height: 92px;
+
+}
+/* скрываем чекбокс */
+.header__checkbox {
+opacity: 0;
+}
+/* стилизуем кнопку */
+.header__burger {
+display: flex;
+position: relative;
+left: 25px;
+align-items: center; 
+width: 26px;
+height: 26px;
+
+cursor: pointer;
+z-index: 1;
+}
+
+/* добавляем "гамбургер" */
+.header__burger > span,
+.header__burger > span::before,
+.header__burger > span::after {
+display: block;
+position: relative;
+width: 35px;
+height: 3.5px;
+background-color: black;
+top: 20px;
+
+}
+.header__burger > span::before {
+content: '';
+top: -8px;
+}
+
+/* контейнер меню */
+.menu__box {
+display: block;
+position: fixed;
+visibility: hidden;
+top: 0;
+left: -100%;
+width: 300px;
+height: 100%;
+margin: 0;
+padding: 80px 0;
+list-style: none;
+text-align: center;
+background-color: black;
+box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+display: block;
+padding: 12px 24px;
+color: black;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-weight: 600;
+text-decoration: none;
+}
+
+/* Открыть-закрыть меню*/
+.menu__item:hover {
+background-color: #CFD8DC;
+}
+.header__checkbox:checked ~ .header__burger > span {
+transform: rotate(45deg);
+}
+.header__checkbox:checked ~ .header__burger > span::before {
+top: 0;
+transform: rotate(90deg);
+}
+.header__checkbox:checked ~ .header__burger > span::after {
+top: 0;
+transform: rotate(0deg);
+}
+.header__checkbox:checked ~ .header__burger {
+visibility: visible;
+left: 25px;
+}
+
+
