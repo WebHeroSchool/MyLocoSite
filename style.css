@@ -5,6 +5,11 @@ padding: 0;
 
 body {
 font-family: "Montserrat";
+
+}
+
+.main {
+padding: 0px 0 0 52px;
 }
 
 .header {
@@ -17,7 +22,7 @@ margin: 0 0 106px 0;
 .header__container {
 display: flex;
 align-items: center;
-padding: 36px 0 0 52px;
+
 }
 
 .header__logo {
@@ -44,6 +49,12 @@ text-align: right;
 list-style-type: none;
 }
 
+/* Убираем подчеркивание у RU */
+
+.lang__ru {
+	text-decoration: none;
+	color: white;
+}
 /* Стрелка вниз */
 .header__lang:after {
 position:absolute;
@@ -88,4 +99,27 @@ top: 39.54px;
 top: 48.98px;
 }
 
+
+.new-collection__image {
+
+	width: 550px;
+    height: 555px;
+    margin: 0 56px 0px 187px;
+}
+
+.new-collection {
+	display: flex;
+	color: black;
+
+}
+
+.new-collection__title {
+	top: 263px;
+width: 475px;
+height: 164px;
+font-style: normal;
+font-weight: bold;
+font-size: 80px;
+line-height: 82px;
+}
 
