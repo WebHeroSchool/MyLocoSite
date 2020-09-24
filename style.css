@@ -1,3 +1,8 @@
+* {
+margin: 0;
+padding: 0;
+}
+
 body {
 font-family: "Montserrat";
 }
@@ -6,34 +11,30 @@ font-family: "Montserrat";
 display: flex;
 align-items: center;
 justify-content: space-between;
-background-color: black;
+margin: 0 0 106px 0;
 }
 
 .header__container {
 display: flex;
+align-items: center;
+padding: 36px 0 0 52px;
 }
 
 .header__logo {
 width: 98px;
 height: 37px;
-margin: 36px 0 0 52px;
 font-style: normal;
 font-weight: 500;
 font-size: 30px;
-line-height: 37px;
-text-align: center;
 color: #FFFFFF;
 }
 
 
 .header__lang {
 display: flex;
-margin: 42px 0 0 0;
-
 width: 31px;
 height: 25px;
 position: relative;
-
 left: 238px;
 font-family: Montserrat;
 font-style: normal;
@@ -43,108 +44,48 @@ text-align: right;
 list-style-type: none;
 }
 
-a {
-color: white !important;
-text-decoration: none
-}
-
+/* Стрелка вниз */
 .header__lang:after {
 position:absolute;
-background: url("images/Vector.png") no-repeat scroll center center;
+background: url("images/Vector.svg") no-repeat scroll center center;
 content: "";
-height: 5.5px;
+height: 7.5px;
 width: 11px;
 top: 12px;
-left:78px;
+left:38px;
 
 }
 
+
+/* Черный блок */
+.header:before {
+content: '';
+position: absolute;
+width: 461px;
+height: 1800px;
+background: #000;
+z-index: -1;
+}
+
+
 /* Бургер */
-.header__menu {
+.burger-menu {
 background-color: #f2f2f2;
 width: 92px;
 height: 92px;
-
-}
-/* скрываем чекбокс */
-.header__checkbox {
-opacity: 0;
-}
-/* стилизуем кнопку */
-.header__burger {
-display: flex;
-position: relative;
-left: 25px;
-align-items: center; 
-width: 26px;
-height: 26px;
-
-cursor: pointer;
-z-index: 1;
 }
 
-/* добавляем "гамбургер" */
-.header__burger > span,
-.header__burger > span::before,
-.header__burger > span::after {
-display: block;
-position: relative;
+.burger-menu__item1, .burger-menu__item2 {
 width: 35px;
-height: 3.5px;
+height: 4px;
 background-color: black;
-top: 20px;
-
-}
-.header__burger > span::before {
-content: '';
-top: -8px;
+position: absolute;
+right: 28px;
+top: 39.54px;
 }
 
-/* контейнер меню */
-.menu__box {
-display: block;
-position: fixed;
-visibility: hidden;
-top: 0;
-left: -100%;
-width: 300px;
-height: 100%;
-margin: 0;
-padding: 80px 0;
-list-style: none;
-text-align: center;
-background-color: black;
-box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-}
-/* элементы меню */
-.menu__item {
-display: block;
-padding: 12px 24px;
-color: black;
-font-family: 'Roboto', sans-serif;
-font-size: 20px;
-font-weight: 600;
-text-decoration: none;
-}
-
-/* Открыть-закрыть меню*/
-.menu__item:hover {
-background-color: #CFD8DC;
-}
-.header__checkbox:checked ~ .header__burger > span {
-transform: rotate(45deg);
-}
-.header__checkbox:checked ~ .header__burger > span::before {
-top: 0;
-transform: rotate(90deg);
-}
-.header__checkbox:checked ~ .header__burger > span::after {
-top: 0;
-transform: rotate(0deg);
-}
-.header__checkbox:checked ~ .header__burger {
-visibility: visible;
-left: 25px;
+.burger-menu__item2 {
+top: 48.98px;
 }
 
 
