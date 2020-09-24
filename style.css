@@ -5,7 +5,6 @@ padding: 0;
 
 body {
 font-family: "Montserrat";
-
 }
 
 .main {
@@ -29,7 +28,7 @@ align-items: center;
 width: 98px;
 height: 37px;
 font-style: normal;
-font-weight: 500;
+font-weight: normal;
 font-size: 30px;
 color: #FFFFFF;
 }
