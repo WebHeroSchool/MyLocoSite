@@ -5,9 +5,10 @@ padding: 0;
 
 body {
 font-family:  "Montserrat";
-margin: 0 auto;
 max-width: 1440px;
 width: 100%;
+margin: 0 auto;
+
 }
 
 .main {
@@ -23,7 +24,7 @@ margin: 0 0 69px 0;
 
 .header__container {
 display: flex;
-align-items: center;
+
 }
 
 .header__logo {
@@ -85,8 +86,9 @@ left: 0px;
 /* Бургер */
 .burger-menu {
 background-color: #f2f2f2;
-width: 6.5%;
+width: 92px;
 height: 92px;
+position: relative;
 }
 
 .burger-menu__item1, .burger-menu__item2 {
@@ -115,8 +117,6 @@ margin: 0 56px 0px 133px;
 
 .new-collection__title {
 top: 263px;
-width: 33%;
-height: 164px;
 font-style: normal;
 font-weight: bold;
 font-size: 80px;
@@ -128,14 +128,10 @@ padding: 100px 0 0 0;
 }
 
 .new-collection__text {
-width: 69.5%;
-height: 150px;
 padding: 21px 0 25px 0;
 }
 
 .new-collection__readmore {
-width: 30.8%;
-height: 44px;
 font-style: normal;
 font-weight: 700;
 margin-right: 54px;
@@ -161,6 +157,7 @@ font-size: 13px;
 background: none;
 color: #000;
 cursor: pointer;
+white-space: nowrap; 
 }
 
 /* Стрелка вправо */
@@ -169,7 +166,7 @@ content: "";
 position: absolute;
 background-image: url(./images/Vector2.svg);
 top: 4px;
-left: 200px;
+
 width: 60%;
 height: 12px;	
 background-repeat: no-repeat;
@@ -198,3 +195,4 @@ height: 46px;
 }
 
 
+@media (max-width: 780px) {
