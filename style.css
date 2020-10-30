@@ -347,11 +347,11 @@ transform: rotate(45deg);
 }
 
 .header__logo {
-    color: #000;
-    position: absolute;
-    top: 30px;
-    left: 24px;
-    font-size: 55px;
+color: #000;
+position: absolute;
+top: 30px;
+left: 24px;
+font-size: 55px;
 }
 
 .new-collection__image {
