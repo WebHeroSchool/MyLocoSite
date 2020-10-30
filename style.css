@@ -367,9 +367,3 @@ font-weight: bold;
 line-height: 80px;
 }
 
-.header__lang:after {
-display: flex;
-    justify-content: center;
-    width: 100%;
-    top: 90%;
-  }
