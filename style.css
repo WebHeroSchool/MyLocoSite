@@ -7,7 +7,6 @@ body {
 font-family:  "Montserrat";
 width: 100%;
 margin: 0 auto;
-
 }
 
 .main {
@@ -25,7 +24,6 @@ margin: 0 0 69px 0;
 display: flex;
 justify-content: space-between;
 width: 25%;
-
 }
 
 .header__logo {
@@ -332,8 +330,20 @@ left: 33px;
 }
 
 @media (max-width: 768px) {
-.new-collection__text, .new-collection__readmore, .new-collection__other, .bottom, .lang__ru, .header:before {
+.new-collection__text, .new-collection__readmore, .new-collection__other, .bottom, .lang__ru, .header:before, .header__lang:after {
   display: none;
+}
+
+.new-collection__title:after {
+position: absolute;
+top: 94%;
+left: 50%;
+content: "";
+border: solid black;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 10px;
+transform: rotate(45deg);
 }
 
 .header__logo {
@@ -355,6 +365,7 @@ opacity: 0;
 background: url(images/girl.png) center/cover no-repeat;
 display: block;
 height: 930px;
+max-width:0 auto;
 }
 
 .main {
@@ -367,3 +378,40 @@ font-weight: bold;
 line-height: 80px;
 }
 
+@media (max-width: 560px) {
+.new-collection__title  {
+padding: 90px 0 0 20px;
+font-size: 70px;
+}
+
+.new-collection {
+background: url(images/girlmobile.png) center/cover no-repeat;
+}
+
+
+
+@media (max-width: 470px) {
+.new-collection__title  {
+line-height: 70px;
+font-size: 65px;
+}
+
+.header__logo {
+  font-size: 40px;
+}
+ 
+@media (max-width: 415px) {
+.new-collection__title  {
+line-height: 60px;
+font-size: 60px;
+}
+
+@media (max-width: 380px) {
+.new-collection__title  {
+line-height: 55px;
+font-size: 50px;
+}
+
+.header__logo {
+  font-size: 30px;
+}
