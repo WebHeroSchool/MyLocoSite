@@ -17,7 +17,7 @@ padding: 0px 0 0 50px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-margin: 0 0 74px 0;
+margin: 0 0 77px 0;
 }
 
 .header__container {
@@ -44,7 +44,7 @@ display: flex;
 width: 31px;
 line-height: 37px;
 text-align: center;
-letter-spacing: 0.07em;
+letter-spacing: 1px;
 position: relative;
 font-family: Montserrat;
 font-style: normal;
@@ -52,6 +52,7 @@ font-weight: 500;
 font-size: 20px;
 text-align: center;
 list-style-type: none;
+
 
 }
 
@@ -76,7 +77,7 @@ left:38px;
 .header:before {
 content: '';
 position: absolute;
-width: 32%;
+width: 31.8%;
 height: 200%;
 background: #000;
 z-index: -1;
@@ -113,8 +114,8 @@ color: #000;
 .new-collection__image {
 
 height:62.5%;
-width: 39.60%;
-margin: 0 53px 0px 133px;
+width: 39.5%;
+margin: 0 54px 0px 133px;
 }
 
 .new-collection__title {
@@ -126,27 +127,27 @@ line-height: 82px;
 }
 
 .new-collection__container {
-padding: 100px 0 0 0; 
+padding: 102px 0 0 0; 
 max-width: 467px;
 }
 
 .new-collection__text {
 font-size: 15px;
 line-height: 21px;
-padding: 21px 0 48px 0;
+padding: 17px 0 50px 0;
 
 }
 
 .new-collection__readmore {
 font-style: normal;
-font-weight: 700;
-margin-right: 52px;
+font-weight: 500;
+margin-right: 48px;
 font-size: 13px;
 line-height: 0;
 background: none;
 color: #000;
 cursor: pointer;
-padding: 12px 36px;
+padding: 12px 40px;
 border: 1.5px solid #000000;
 box-sizing: border-box;
 }
@@ -156,7 +157,7 @@ width: 28%;
 position: relative;
 display: inline-block;
 font-style: normal;
-font-weight: 700;
+font-weight: 500;
 outline: 0;
 border: 0;
 font-size: 13px;
@@ -171,11 +172,11 @@ white-space: nowrap;
 content: "";
 position: absolute;
 background-image: url(./images/Vector2.svg);
-top: 4px;
-
+top: 2px;
 width: 60%;
 height: 12px;	
 background-repeat: no-repeat;
+left: 145%;
 }
 
 
@@ -193,7 +194,7 @@ height: 47px;
 }
 
 .social__link, .social__link-vk {
-margin: 0 10px 0 0;
+margin: 0 8px 0 0;
 }
 
 .mouse {
@@ -349,12 +350,13 @@ left: 33px;
 
 .new-collection__title:after {
 position: absolute;
-left: 50%;
+left: 46.8%;
 content: "";
 border: solid black;
 border-width: 0 3px 3px 0;
 display: flex;
 padding: 15px;
+margin-top: 11px;
 transform: rotate(45deg);
 }
 
@@ -374,6 +376,10 @@ opacity: 0;
   margin: 0;
 }
 
+.burger__menu {
+background: #EDEDED;
+}
+
 .new-collection {
 background: url(images/girl.png) center/cover no-repeat;
 display: block;
@@ -391,16 +397,39 @@ font-weight: bold;
 line-height: 80px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 516px) {
+.header__logo  {
+top:12px;
+}
+
+.burger-menu {
+width: 72px;
+height: 67px;
+}
+
+.burger-menu__item1, .burger-menu__item2 {
+width: 26.4px;
+height: 3.1px;
+right: 24.5px;
+top: 27px;
+}
+
+.burger-menu__item2 {
+top: 34px;
+}
+
 .new-collection__title  {
-padding: 30px 0 0 30px;
+padding: 21px 0 0 24px;
 font-size: 50px;
-line-height: 50px;
+line-height: 52px;
 }
 
 .new-collection {
-background: url(images/girlmobile.png) center/cover no-repeat;
+background: url(images/girlmobile.png);
 height: 527px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 .new-collection__title:after {
@@ -408,17 +437,13 @@ padding: 10px;
 }
 
 @media (max-width: 470px) {
-.header__logo {
-  font-size: 40px;
-}
- 
-@media (max-width: 380px) {
-.new-collection__title  {
-line-height: 45px;
-font-size: 40px;
-padding: 50px 0 0 30px;
 }
 
+@media (max-width: 380px) {
+
+.new-collection {
+background-position: 0 95%;
+}
 .header__logo {
   font-size: 30px;
 }
