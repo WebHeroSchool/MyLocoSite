@@ -435,9 +435,7 @@ background-repeat: no-repeat;
 .new-collection__title:after {
 padding: 10px;
 }
-
-@media (max-width: 470px) {
-}
+} 
 
 @media (max-width: 380px) {
 
