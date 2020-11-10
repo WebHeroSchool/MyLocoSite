@@ -7,6 +7,8 @@ body {
 font-family:  "Montserrat";
 width: 100%;
 margin: 0 auto;
+min-width: 320px;
+max-width: 1500px;
 }
 
 .main {
@@ -82,6 +84,8 @@ height: 200%;
 background: #000;
 z-index: -1;
 left: 0px;
+max-width: 477px;
+max-height: 1750px;
 }
 
 /* Бургер */
@@ -395,6 +399,7 @@ padding: 90px 0 0 40px;
 font-size: 80px;
 font-weight: bold;
 line-height: 80px;
+}
 }
 
 @media (max-width: 516px) {
