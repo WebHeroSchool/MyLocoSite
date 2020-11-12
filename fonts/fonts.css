@@ -5,6 +5,7 @@
   src: url("Montserrat-Regular.woff2") format("woff2");
   src: url("Montserrat-Regular.woff") format("woff");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-weight: bold;
