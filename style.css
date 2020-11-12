@@ -13,6 +13,7 @@ max-width: 1500px;
 
 .main {
 padding: 0px 0 0 50px;
+position: relative;
 }
 
 .header {
@@ -345,6 +346,7 @@ font-size: 9px;
 
 .header__lang:after {
 left: 33px;
+}
 }
 
 @media (max-width: 768px) {
