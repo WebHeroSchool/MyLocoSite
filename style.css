@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   width: 100%;
   margin: 0 auto;
   min-width: 320px;
@@ -43,13 +43,13 @@ body {
 }
 
 .header__lang {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   width: 31px;
   line-height: 37px;
   text-align: center;
   letter-spacing: 1px;
   position: relative;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -94,7 +94,7 @@ body {
   position: relative;
 }
 
-.burger-menu__item1, 
+.burger-menu__item1,
 .burger-menu__item2 {
   width: 34px;
   height: 3.2px;
@@ -115,9 +115,9 @@ body {
 }
 
 .new-collection__image {
-  height:62.5%;
+  height: 62.5%;
   width: 39.5%;
-  margin: 0 54px 0px 133px;
+  margin: 0 54px 0 133px;
 }
 
 .new-collection__title {
@@ -129,7 +129,7 @@ body {
 }
 
 .new-collection__container {
-  padding: 102px 0 0 0; 
+  padding: 102px 0 0 0;
   max-width: 467px;
 }
 
@@ -149,7 +149,7 @@ body {
   color: #000;
   cursor: pointer;
   padding: 12px 40px;
-  border: 1.5px solid #000000;
+  border: 1.5px solid #000;
   box-sizing: border-box;
 }
 
@@ -165,17 +165,17 @@ body {
   background: none;
   color: #000;
   cursor: pointer;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 /* Стрелка вправо */
-.new-collection__other:after {
+.new-collection__other::after {
   content: "";
   position: absolute;
   background-image: url(./images/Vector2.svg);
   top: 2px;
   width: 60%;
-  height: 12px;	
+  height: 12px;
   background-repeat: no-repeat;
   left: 145%;
 }
@@ -192,7 +192,8 @@ body {
   height: 47px;
 }
 
-.social__link, .social__link-vk {
+.social__link,
+.social__link-vk {
   margin: 0 8px 0 0;
 }
 
@@ -202,20 +203,19 @@ body {
 }
 
 @media (min-width: 1441px) {
-  .new-collection__image {
+ .new-collection__image {
   width: auto;
   }
 }
 
-
 @media (max-width: 1300px) {
   .new-collection__title {
-   top: 200px;
-  font-size: 65px;
+    top: 200px;
+    font-size: 65px;
   }
 
   .new-collection__container {
-  padding: 70px 0 0 0; 
+  padding: 70px 0 0 0;
   }
 
 .new-collection__title {
