@@ -14,6 +14,7 @@ body {
 .main {
   padding: 0 0 0 50px;
   position: relative;
+  margin-bottom: 41px;
 }
 
 .header {
@@ -453,4 +454,128 @@ body {
   .header__logo {
     font-size: 30px;
   }
+}
+
+/* Вторая страница */
+
+.clutch {
+  background-color: #FAE8E4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clutch__wrap {
+display: flex;
+}
+
+.clutch__pink {
+  padding: 20px 0 0 230px;
+  background: url(images/clutch2.png) 137px 212px no-repeat;
+}
+
+.clutch__main {
+  padding-top: 165px;
+  padding-left: 65px;
+}
+
+.clutch__color-price {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clutch__description {
+  background-color: #fff;
+  padding: 43px 66px 44px 57px;
+  max-width: 368px;
+}
+
+.clutch__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 41px;
+  white-space: nowrap;
+}
+
+.clutch__subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  opacity: 0.5;
+  letter-spacing: 0.07em;
+  padding-top: 15px;
+  padding-bottom: 61px;
+}
+
+.clutch__text {
+  font-size: 15px;
+  line-height: 21px;
+  opacity: 0.5;
+  padding-bottom: 47px;
+}
+
+.clutch__price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: right;
+}
+
+.clutch__list_white,
+.clutch__list_pink,
+.clutch__list_blue,
+.clutch__list_green {
+  display: inline-block;
+  margin-right: 7.7px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.clutch__list_white {
+  background: #dedede;
+}
+
+.clutch__list_pink {
+  background-color: #f29f9f;
+  height: 38px;
+  width: 38px;
+}
+
+.clutch__list_blue{
+  background: #a8bff9;
+}
+
+.clutch__list_green {
+  background: #90bd8f;
+}
+
+.clutch__list_colors {
+  margin-right: 0;
+}
+
+.clutch__buttons, .clutch__buy  {
+  border: 1.5px solid #000;
+  text-decoration: none;
+  font-family: 'montserratbold', sans-serif;
+  font-size: 13px;
+  padding: 14px 35px;
+  color: #000;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.clutch__buy {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 13px;
+  border: 1.5px solid #000000;
+}
+
+.clutch__buttons {
+  outline: none;
+  border: none;
 }
