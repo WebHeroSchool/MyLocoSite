@@ -478,13 +478,7 @@ display: flex;
   padding-left: 65px;
 }
 
-.clutch__color-price {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.clutch__description {
+.clutch__container {
   background-color: #fff;
   padding: 43px 66px 44px 57px;
   max-width: 368px;
@@ -513,7 +507,7 @@ display: flex;
   font-size: 15px;
   line-height: 21px;
   opacity: 0.5;
-  padding-bottom: 47px;
+  padding-bottom: 37px;
 }
 
 .clutch__price {
@@ -522,8 +516,22 @@ display: flex;
   font-size: 40px;
   line-height: 56px;
   text-align: right;
+  padding-right: 10px;
 }
 
+.clutch__color-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clutch__list {
+  padding-top: 14px;
+}
+
+.clutch__list__colors {
+  display: flex;
+  margin-top: -5px;
+}
 .clutch__list_white,
 .clutch__list_pink,
 .clutch__list_blue,
@@ -533,6 +541,12 @@ display: flex;
   border-radius: 50%;
   height: 30px;
   width: 30px;
+}
+
+.clutch__list_white,
+.clutch__list_blue,
+.clutch__list_green {
+  margin-bottom: 4px;
 }
 
 .clutch__list_white {
@@ -557,15 +571,40 @@ display: flex;
   margin-right: 0;
 }
 
-.clutch__buttons, .clutch__buy  {
-  border: 1.5px solid #000;
-  text-decoration: none;
-  font-family: 'montserratbold', sans-serif;
-  font-size: 13px;
-  padding: 14px 35px;
-  color: #000;
-  text-transform: uppercase;
-  display: inline-block;
+.clutch__buttons {
+  display: flex;
+  margin-top: 51px;
+}
+
+.clutch__input {
+  width: 97px;
+  height: 41px;
+  text-align: center;
+  border: none;
+  font-family: Montserrat; 
+}
+
+.clutch__minus,
+.clutch__plus {
+  border: none;
+  background-color: white;
+  position: absolute;
+}
+
+.clutch__minus {
+  top: 10px;
+  left: 17px;
+}
+
+.clutch__plus {
+  top: 10px;
+  left: 70px;
+}
+
+.buttons__wrap {
+  display: flex;
+  position: relative;
+  border: 1.5px solid #000000;
 }
 
 .clutch__buy {
@@ -573,9 +612,30 @@ display: flex;
   font-weight: 500;
   font-size: 13px;
   border: 1.5px solid #000000;
+  padding-right: 10px;
+  width: 253px;
+  height: 44px;
+  background-color: white;
+  margin-left: 17px;
 }
 
-.clutch__buttons {
-  outline: none;
-  border: none;
+.clutch__other {
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 39px;
+  margin-left: 7px;
+}
+
+.clutch__other-items {
+  margin-right: 15px;
+}
+
+.clutch__other::after {
+  content: "";
+  position: absolute;
+  background-image: url(./images/Vector2.2.svg);
+  width: 60%;
+  height: 12px;
+  background-repeat: no-repeat;
+  margin-top: 3px;
 }
