@@ -65,7 +65,7 @@ body {
 /* Стрелка вниз */
 .header__lang::after {
   position: absolute;
-  background: url("images/Vector.svg") no-repeat scroll center center;
+  background: url("./images/Vector.svg") no-repeat scroll center center;
   content: "";
   height: 7.5px;
   width: 11px;
@@ -386,7 +386,7 @@ body {
   }
 
   .new-collection {
-    background: url(images/girl.png) center/cover no-repeat;
+    background: url(./images/girl.png) center/cover no-repeat;
     display: block;
     height: 930px;
     max-width: 0 auto;
@@ -433,7 +433,7 @@ body {
   }
 
   .new-collection {
-    background: url(images/girlmobile.png);
+    background: url(./images/girlmobile.png);
     height: 527px;
     background-size: cover;
     background-position: center;
@@ -473,7 +473,7 @@ body {
 
 .clutch__pink {
   padding: 30px 0 0 230px;
-  background: url(images/clutch2.png) 137px 212px no-repeat;
+  background: url(./images/clutch2.png) 137px 212px no-repeat;
   width: 58.5%;
 }
 
@@ -1151,5 +1151,4 @@ body {
 .serene-total-look__description {
     width: 90%;
   }
-}
 }
